@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Учебный тест замены матерных слов на звездочки</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/mustard-ui.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script defer src="./script.js"></script>
+</head>
+
+<body>
+
+<div class="container-small">
+  <h5>Замена матерных слов на звездочки</h5>
+  <p>* База матерных слов находится в файле <strong>mat_words.json</strong></p>
+  <br>
+  <h6>Введите текст на проверку</h6>
+  <div class="form-control">
+    <textarea id="inp" rows="5" cols="15" name="inp"></textarea>
+  </div>
+  <button class="button-primary button-round">Сделать проверку</button>
+  <br>
+  <h6>Результат:</h6>
+  <div class="form-control">
+    <textarea id="out" rows="5" cols="15" name="out" readonly></textarea>
+  </div>
+  <div class="addtobase">
+  <input type="text" name="maretslovo" id="maretslovo">
+  <button class="addtobase-btm">Добавить слово в базу</button>
+  </div>
+  <br>
+  <h6>Список матерных слов:</h6>
+  <div class="form-control">
+    <textarea id="matslov" rows="5" cols="15" name="out" readonly></textarea>
+  </div>
+</div>
+
+</body>
+</html>
