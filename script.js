@@ -63,7 +63,7 @@ const clearSelection = () => {
 // вывод выделенного слова в специальный инпут
 const prepareWordToAdd = () => {
 	// addWordImput.value = document.getSelection().toString(); // работает не во всех браузерах
-	addWordInput.value = textOut.value.substring(textOut.selectionStart, textOut.selectionEnd);
+	addWordInput.value = textOut.value.substring(textOut.selectionStart, textOut.selectionEnd).trim();
 };
 
 // добавление слова в базу
